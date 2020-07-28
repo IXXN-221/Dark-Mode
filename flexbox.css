@@ -57,10 +57,20 @@ body {
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #f7f3ee;
+    background-color: #ceecf9;
   }
 
   .item-header{
     font-size: 28px;
+  }
+
+  .flex-item{
+    width: 200px;
+    height: 100px;
+
+  }
+
+  .item-header{
+    font-size: 14px;
   }
 }
