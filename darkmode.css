@@ -5,24 +5,25 @@
   font-family: "Nunito", sans-serif;
 }
 
-body {
-  background-color: #f2e9de;
+.mode-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
 
-.flex-wrapper {
+.wrapper {
   width: 57vw;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f7f3ee;
 }
 
-.flex-item {
+.item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,37 +35,67 @@ body {
   -webkit-box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
   -moz-box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
   box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
-  background-color: #fff;
   border-radius: 10px;
   transition: ease-in-out .3s;
 }
 
-.flex-item:hover {
+.item.light {
+  /* box shadow  */
+  -webkit-box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+  -moz-box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+  box-shadow: 7px 7px 5px 3px rgba(242, 232, 211, 1);
+}
+
+.item:hover {
   -webkit-box-shadow: 10px 10px 5px 3px rgb(220, 209, 187);
   -moz-box-shadow: 10px 10px 5px 3px rgb(220, 209, 187);
   box-shadow: 10px 10px 5px 3px rgb(220, 209, 187);
 }
 
+.item.dark:hover {
+  /* box shadow  */
+  -webkit-box-shadow: 7px 7px 5px 3px rgb(73, 73, 73);
+  -moz-box-shadow: 7px 7px 5px 3px rgb(73, 73, 73);
+  box-shadow: 7px 7px 5px 3px rgb(73, 73, 73);
+}
+
+.light{
+  color: rgb(29, 29. 29);
+  background-color: #fff;
+}
+
+.dark {
+  color: #fff;
+  background-color: black;
+}
+
+.item.dark {
+  /* box shadow  */
+  -webkit-box-shadow: 7px 7px 5px 3px rgb(53, 53, 53);
+  -moz-box-shadow: 7px 7px 5px 3px rgb(53, 53, 53);
+  box-shadow: 7px 7px 5px 3px rgb(53, 53, 53);
+}
+
 .item-header{
   font-size: 28px;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {
-  .flex-wrapper {
+  .wrapper {
     width: 85vw;
     margin: auto;
     justify-content: center;
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #ceecf9;
   }
 
   .item-header{
     font-size: 28px;
   }
 
-  .flex-item{
+  .item{
     width: 200px;
     height: 100px;
 
